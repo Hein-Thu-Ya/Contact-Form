@@ -26,14 +26,14 @@
                 </div>
             @endif
 
-            <div class="container">
+            <div class="container mt-5">
                 @if ($message = Session::get('success'))
                 <div class="alert alert-success alert-block mt-5">
                     <button type="button" class="close" data-dismiss="alert">×</button>	
                     {{ $message }}
                 </div>
                 @endif
-                <div class="card">
+                <div class="card mb-3">
                     <div class="card-header bg-primary text-white"><h3>Contact Us</h3></div>
                     <div class="card-body">
                         <form action="{{ url('contact') }}" method="POST">
